@@ -1,0 +1,193 @@
+/*reset*/
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+input {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+/*  header-container*/
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.header_btn {
+	padding: 8px 12px;
+	font-family:  sans-serif;
+	background-color: #555a88;
+	border: none;
+	color: #e5e5e5;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 150ms filter ease-in-out;
+}
+.header_btn:hover {
+	filter: brightness(1.2);
+}
+
+/* card user-containers*/
+.users-containers {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+/*   Cards Users*/
+
+.user {
+	border: 1px solid #e5e5e5;
+	padding: 20px;
+	width: 100%;
+	max-width: 400px;
+	border-radius: 10px;
+}
+
+.user_title {
+	margin-bottom: 20px;
+}
+
+.user_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user_item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.user_item span {
+	color: #3d3d3d;
+	text-transform: uppercase;
+}
+.user_item span i {
+	color: #000;
+	margin-right: 4px;
+}
+
+.user_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 8px;
+	border-radius: 4px;
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+	transition: 100ms transform ease-in-out;
+}
+.user_btn:hover {
+	transform: scale(1.1);
+}
+.user_btn:first-child {
+	background-color: #d85d5d;
+	color: white;
+}
+.user_btn:last-child {
+	color: #aaaa;
+}
+
+.user_container-btn {
+	display: flex;
+	gap: 8px;
+	justify-content: flex-end;
+}
+/*/////////////////////   modal   ///////////////////////   */
+
+.container-form  {
+	position: fixed;
+	background-color: #0003;
+	backdrop-filter: blur(2px);
+	z-index: 2;
+	top: 0;
+	min-height: 100vh;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+.disable-form{
+	
+	display: none;
+}
+/*form*/
+
+form {
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 300px;
+	position: relative;
+}
+.form_x {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: #d85d5d;
+	font-size: 30px;
+	cursor: pointer;
+	transition: 200ms transform ease-in-out;
+}
+.form_x:hover {
+	transform: scale(1.1);
+}
+.form_title {
+	font-size: 24px;
+}
+
+.form_div {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 15px;
+}
+.form_label {
+	font-size: 13px;
+}
+.form_input {
+	font-family: inherit;
+	padding: 5px 10px;
+	background-color: #f9fafc;
+	border: solid 1px #0003;
+	border-radius: 4px;
+}
+.form_btn {
+	width: 100%;
+	border: solid green 6px;
+	padding: 8px 12px;
+	background-color: #555a88;
+	border: none;
+	margin-top: 30px;
+	color: #e5e5e5;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 150ms filter ease-in-out;
+}
+.form_btn:hover {
+	filter: brightness(1.2);
+}
