@@ -1,6 +1,13 @@
 import React from "react";
 
-const UserCard = ({ user, deleteUser, setuserUpdate }) => {
+const UserCard = ({ user, deleteUser, setuserUpdate,
+	handleChangeShowModal}) => {
+
+const handleChangeClickUpdate=()=>{
+	handleChangeShowModal()
+	setuserUpdate(user)
+}
+
 	return (
 		<article className="user">
 			<h2 className="user_title">{`${user.first_name} ${user.last_name}`}</h2>
@@ -21,13 +28,13 @@ const UserCard = ({ user, deleteUser, setuserUpdate }) => {
 					className="user_btn"
 					onClick={() => deleteUser(user.id)}
 				>
-					<i className="bx bx-trash"></i>
+					<i className="user_btn_icon bx bx-trash"></i>
 				</button>
 				<button
 					className="user_btn"
-					onClick={() => setuserUpdate(user)}
+					onClick={handleChangeClickUpdate}
 				>
-					<i className="bx bx-edit-alt"></i>
+					<i className="user_btn_icon bx bx-edit-alt"></i>
 				</button>
 			</div>
 		</article>

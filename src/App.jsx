@@ -30,6 +30,7 @@ function App() {
 			.post(URL, data)
 			.then((res) => {
 				console.log(res.data);
+				handleChangeShowModal()
 				getAllUsers();
 			})
 			.catch((err) => console.log(err));
@@ -57,6 +58,7 @@ function App() {
 				console.log(res.data);
 				getAllUsers();
 				setuserUpdate();
+				handleChangeShowModal()
 			})
 			.catch((err) => console.log(err));
 	};
@@ -74,13 +76,13 @@ function App() {
 	return (
 		<div className="App">
 			<div className="header-container">
-				<h1 className="header_title">CRUD USERS</h1>
+				<h1 className=" animate__backInLeft header_title">CRUD USERS</h1>
 				<button onClick={handleChangeShowModal} className="header_btn">
 					
 					<i className="bx bx-plus"> Create New User</i>
 				</button>
 			</div>
-			<div className="container-form disable-form">
+		
 				<FormUsers
 					createUsers={createUsers}
 					userUpdate={userUpdate}
@@ -88,7 +90,7 @@ function App() {
 					isShowForm={isShowForm}
 					handleChangeShowModal={handleChangeShowModal}
 				/>
-			</div>
+			
 			<div className="users-containers">
 				{users?.map((user) => (
 					<UserCard
@@ -96,6 +98,7 @@ function App() {
 						deleteUser={deleteUser}
 						user={user}
 						setuserUpdate={setuserUpdate}
+						handleChangeShowModal={handleChangeShowModal}
 					/>
 				))}
 			</div>

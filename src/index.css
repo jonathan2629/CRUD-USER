@@ -10,11 +10,13 @@ html {
 
 body {
 	margin: 0;
+	
 	font-family: "Roboto", sans-serif;
 }
 input {
 	outline: none;
 }
+
 
 h1,
 h2,
@@ -26,22 +28,29 @@ h6 {
 }
 /*  header-container*/
 .header-container {
+	width: 100%;
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
+	background-color: #c8c6c6;;
+	
+	
 }
 .header_btn {
+	font-family: ;
 	padding: 8px 12px;
-	font-family:  sans-serif;
-	background-color: #555a88;
+	background-color: #e5e5e3;
 	border: none;
-	color: #e5e5e5;
+	color: white;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 150ms filter ease-in-out;
 }
 .header_btn:hover {
-	filter: brightness(1.2);
+	filter: brightness(1.02);
+	border: #0003 solid 1px;
+	color: #000;
 }
 
 /* card user-containers*/
@@ -55,11 +64,20 @@ h6 {
 /*   Cards Users*/
 
 .user {
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	margin-top: 70px;
+box-shadow: 5px solid;
 	border: 1px solid #e5e5e5;
+	box-shadow: #000 inset;
 	padding: 20px;
 	width: 100%;
 	max-width: 400px;
 	border-radius: 10px;
+	transition: 100ms transform ease-in-out;
+}
+.user:hover{
+	transform: scale(1.02);
+
 }
 
 .user_title {
@@ -100,6 +118,9 @@ h6 {
 .user_btn:hover {
 	transform: scale(1.1);
 }
+.user_btn_icon:hover {
+	color: black;
+}
 .user_btn:first-child {
 	background-color: #d85d5d;
 	color: white;
@@ -115,7 +136,7 @@ h6 {
 }
 /*/////////////////////   modal   ///////////////////////   */
 
-.container-form  {
+.container-form {
 	position: fixed;
 	background-color: #0003;
 	backdrop-filter: blur(2px);
@@ -127,17 +148,14 @@ h6 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
-	
 }
-.disable-form{
-	
+.disable-form {
 	display: none;
 }
 /*form*/
 
 form {
-	background-color: white;
+	background-color: #808b96;
 	padding: 15px;
 	border-radius: 10px;
 	width: 100%;
@@ -178,9 +196,9 @@ form {
 }
 .form_btn {
 	width: 100%;
-	border: solid green 6px;
+
 	padding: 8px 12px;
-	background-color: #555a88;
+	background-color: #757575;
 	border: none;
 	margin-top: 30px;
 	color: #e5e5e5;
@@ -190,4 +208,5 @@ form {
 }
 .form_btn:hover {
 	filter: brightness(1.2);
+	border: #0003 solid 1px;
 }
