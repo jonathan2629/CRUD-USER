@@ -175,7 +175,8 @@ form {
 }
 .form_x:hover {
 	transform: scale(1.1);
-	background-color: var(--secundary-color);
+	color: var(--secundary-color);
+
 }
 .form_title {
 	font-size: 24px;
