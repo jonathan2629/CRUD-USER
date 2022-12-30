@@ -210,5 +210,5 @@ form {
 }
 .form_btn:hover {
 	filter: brightness(1.2);
-	border: #0003 solid 1px;
+	background-color: var(--secundary-color);
 }
