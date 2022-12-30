@@ -11,11 +11,11 @@ html {
 	--prymary-color: #5575fa;
 	--secundary-color: #40afdb;
 	--third-color: #52f2ca;
+	--btn-color: #757575;
 }
 
 body {
 	margin: 0;
-	
 
 	font-family: "Roboto", sans-serif;
 }
@@ -43,7 +43,7 @@ h6 {
 .header_btn {
 	font-family: "roboto";
 	padding: 8px 12px;
-	background-color: var(--secundary-color);
+	background-color: var(--btn-color);
 	border: none;
 	color: white;
 	border-radius: 5px;
@@ -54,6 +54,8 @@ h6 {
 	filter: brightness(1.02);
 	border: #0003 solid 1px;
 	color: #000;
+	background-color: var(--secundary-color);
+	
 }
 
 /* card user-containers*/
@@ -176,7 +178,6 @@ form {
 .form_x:hover {
 	transform: scale(1.1);
 	color: var(--secundary-color);
-
 }
 .form_title {
 	font-size: 24px;
@@ -202,7 +203,7 @@ form {
 	width: 100%;
 
 	padding: 8px 12px;
-	background-color: #757575;
+	background-color: var(--btn-color);
 	border: none;
 	margin-top: 30px;
 	color: #e5e5e5;
